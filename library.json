@@ -1,0 +1,26 @@
+{
+    "name": "MQTT library for ESP32 (ESP-IDF)",
+    "keywords": "MQTT, esp32, esp-idf, espressif",
+    "description": "Library for work with  MQTT protocol.",
+    "authors": {
+        "name": "Andrey Mitrokhin",
+        "email": "andrey@mitrokhin.ru",
+        "url": "http://mitrokhin.ru",
+        "maintainer": true
+    },
+    "build": {
+        "flags": [
+            "-D CONFIG_MQTT_PROTOCOL_311",
+            "-D CONFIG_MQTT_TRANSPORT_SSL",
+            "-D CONFIG_MQTT_TRANSPORT_WEBSOCKET",
+            "-D CONFIG_MQTT_TRANSPORT_WEBSOCKET_SECURE"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Andrey-m/MQTT-lib-for-esp-idf.git"
+    },
+    "version": "1.0.0",
+    "frameworks": "espidf",
+    "platforms": "espressif32"
+}
